@@ -25,9 +25,9 @@ jobs:
         #source - https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
         
       - name: Login to GHCR.io
-        uses: docker/login-action@v5
+        uses: docker/login-action@v2
         with:
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
