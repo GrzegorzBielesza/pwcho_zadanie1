@@ -39,7 +39,7 @@ jobs:
 
         #source - https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
         
-      - name: Extract metadata (tags, labels) for Docker
+      - name: Extract Docker metadata (tags, labels)
         id: meta
         uses: docker/metadata-action@v4
         with:
