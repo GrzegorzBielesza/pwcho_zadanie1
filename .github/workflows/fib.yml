@@ -44,7 +44,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/gbielesza/pwcho_zadanie1
+            ghcr.io/GrzegorzBielesza/pwcho_zadanie1
           tags: |
             type=ref,event=branch
             type=semver,pattern=v{{major}}.{{minor}}-{{patch}}
