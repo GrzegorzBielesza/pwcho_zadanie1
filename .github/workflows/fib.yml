@@ -39,7 +39,7 @@ jobs:
 
         #source - https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
         
-      - name: Extract Docker metadata (tags, labels)
+      - name: Extract metadata for Docker (tags, labels)
         id: meta
         uses: docker/metadata-action@v4
         with:
@@ -47,6 +47,7 @@ jobs:
             ghcr.io/GrzegorzBielesza/pwcho_zadanie1
           tags: |
             type=ref,event=branch
+            type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
 
