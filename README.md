@@ -10,6 +10,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Repo init: `git init -b main`
 * Commit: `git add . && git commit -m "<comment>"`
 * Remote repo create: `gh repo create <repo_name> --public --source=. --remote=<repo_name> --push`
+* Tag: `git tag <version> -m "<comment>"`
+* Push `git push`
+* Push tags `git push --tags`
 
 ### Docker
 
